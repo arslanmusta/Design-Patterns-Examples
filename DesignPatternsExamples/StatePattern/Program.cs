@@ -1,5 +1,6 @@
 ﻿using System;
 using StatePattern.Canvas;
+using StatePattern.Thread;
 using StatePattern.TrafficLight;
 
 namespace StatePattern
@@ -12,6 +13,8 @@ namespace StatePattern
             CanvasTester.Test();
             Console.WriteLine("\n\n---TrafficLightTest---");
             TrafficLightTester.Test();
+            Console.WriteLine("\n\n---ThreadTest---");
+            ThreadTester.Test();
 
             Console.ReadKey();
         }

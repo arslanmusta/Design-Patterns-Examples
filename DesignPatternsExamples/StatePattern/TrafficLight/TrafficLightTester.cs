@@ -20,7 +20,6 @@ namespace StatePattern.TrafficLight
                 Console.WriteLine(trafficLight.Color);
             }
 
-            Console.ReadKey();
         }
     }
 }
