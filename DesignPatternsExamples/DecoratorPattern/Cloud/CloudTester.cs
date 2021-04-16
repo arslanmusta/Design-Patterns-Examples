@@ -11,7 +11,7 @@ namespace DecoratorPattern.Cloud
             StoreCreditCard(new EncryptedCloudStream(new CompressedCloudStream(new CloudSteam())));
         }
 
-        internal static void StoreCreditCard(IStream stream)
+        private static void StoreCreditCard(IStream stream)
         {
             stream.Write("1234-1234-1234-1234");
         }
