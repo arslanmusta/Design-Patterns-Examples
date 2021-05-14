@@ -8,7 +8,7 @@ namespace BuilderPattern.Functional
         where TSelf : FunctionalBuilder<TSubject, TSelf>
         where TSubject: new()
     {
-        private readonly List<Func<TSubject, TSubject>> _actions = new List<Func<TSubject, TSubject>>();
+        private readonly List<Func<TSubject, TSubject>> _actions = new ();
         
         public TSelf Do(Action<TSubject> action) => AddAction(action);
 
