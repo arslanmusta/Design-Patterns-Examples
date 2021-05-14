@@ -1,4 +1,5 @@
 ﻿using System;
+using BuilderPattern.Code;
 using BuilderPattern.Faceted;
 using BuilderPattern.Functional;
 using BuilderPattern.GenericFluent;
@@ -18,6 +19,8 @@ namespace BuilderPattern
             FunctionalTester.Test();
             Console.WriteLine("---Faceted Test---");
             FacetedTester.Test();
+            Console.WriteLine("---Code Test---");
+            CodeTester.Test();
         }
     }
 }
