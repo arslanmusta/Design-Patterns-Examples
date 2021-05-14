@@ -1,4 +1,5 @@
 ﻿using System;
+using BuilderPattern.Functional;
 using BuilderPattern.GenericFluent;
 using BuilderPattern.Html;
 
@@ -12,6 +13,8 @@ namespace BuilderPattern
             HtmlTester.Test();
             Console.WriteLine("---Generic Fluent Test---");
             GenericFluentTester.Test();
+            Console.WriteLine("---Functional Test---");
+            FunctionalTester.Test();
         }
     }
 }
