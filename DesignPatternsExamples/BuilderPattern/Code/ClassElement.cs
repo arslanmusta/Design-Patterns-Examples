@@ -6,7 +6,7 @@ namespace BuilderPattern.Code
     public class ClassElement
     {
         public string Name;
-        public List<(string, string)> Fields  = new();
+        public readonly List<(string, string)> Fields  = new();
 
         public override string ToString()
         {
