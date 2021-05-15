@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using FactoryPattern.Point;
+using FactoryPattern.Shape;
 
 namespace FactoryPattern
 {
@@ -10,6 +11,8 @@ namespace FactoryPattern
         {
             Console.WriteLine("---Point Test---");
             await PointTester.Test();
+            Console.WriteLine("---Shape Test---");
+            ShapeTester.Test();
         }
     }
 }
