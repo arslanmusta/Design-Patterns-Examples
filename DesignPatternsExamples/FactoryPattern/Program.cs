@@ -1,14 +1,15 @@
 ﻿using System;
+using System.Threading.Tasks;
 using FactoryPattern.Point;
 
 namespace FactoryPattern
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             Console.WriteLine("---Point Test---");
-            PointTester.Test();
+            await PointTester.Test();
         }
     }
 }
